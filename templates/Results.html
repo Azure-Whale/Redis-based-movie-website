@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+   <body>
+      <table border = 1>
+         {% for i in range(mv|length) %}
+            <tr>
+                <th>'Title'</th>
+               <td> {{ mv[i]['Title'] }} </td>
+                                <th>Director</th>
+                <td> {{ mv[i]['Director'] }} </td>
+                                <th>Major_Genre</th>
+                <td> {{ mv[i]['Major_Genre'] }} </td>
+                                <th>US_Gross</th>
+                <td> {{ mv[i]['US_Gross'] }} </td>
+                                <th>Worldwide_Gross</th>
+                <td> {{ mv[i]['Worldwide_Gross'] }} </td>
+                                <th>Production_Budget</th>
+                <td> {{ mv[i]['Production_Budget'] }} </td>
+                <th>Rotten_Tomatoes_Rating</th>
+                <td> {{ mv[i]['Rotten_Tomatoes_Rating'] }} </td>
+            </tr>
+         {% endfor %}
+      </table>
+   </body>
+</html>
